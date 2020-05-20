@@ -28,6 +28,7 @@ dependencies:
   flutter_screenutil: ^1.1.0
   google_fonts: ^1.1.0
   cloud_firestore: ^0.13.5
+  intl: ^0.16.1
 
 dev_dependencies:
   flutter_test:

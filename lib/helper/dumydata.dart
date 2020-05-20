@@ -1,11 +1,12 @@
 import 'package:ToDoApp/enum/kind_task.dart';
+import 'package:ToDoApp/helper/tasksColor.dart';
 import 'package:ToDoApp/model/task.dart';
 
-List<Task> dumyData = [
+List<Task> dummyData = [
   Task(
     taskId: '1',
     isDone: false,
-    taskName: 'go to suberMarket',
+    taskName: 'go to supermarket',
     kindTask: KindTask.Personal,
     rememberMe: false,
     dateTime: DateTime.now(),

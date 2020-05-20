@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 import 'nav_bar.dart';
 
-class OnBording extends StatelessWidget {
+class OnBoarding extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {

@@ -30,6 +30,7 @@ class AppTheme {
 
   static EdgeInsets padding = EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h);
   static EdgeInsets hPadding = EdgeInsets.symmetric(horizontal: 40.w);
+  static EdgeInsets vPadding = EdgeInsets.symmetric(horizontal: 12.w);
 
   static double fullWidth(BuildContext context) {
     return MediaQuery.of(context).size.width;

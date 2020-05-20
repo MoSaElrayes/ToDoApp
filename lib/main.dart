@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter TODO',
       theme: AppTheme.lightTheme,
-      home: OnBording(),
+      home: OnBoarding(),
     );
   }
 }

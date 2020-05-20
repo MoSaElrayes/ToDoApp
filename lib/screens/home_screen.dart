@@ -1,4 +1,4 @@
-import 'package:ToDoApp/model/dumydata.dart';
+import 'file:///D:/Flutter-Project/ToDoApp/lib/helper/dumydata.dart';
 import 'package:ToDoApp/theme/light_color.dart';
 import 'package:ToDoApp/widgets/appBar.dart';
 import 'package:ToDoApp/widgets/task_widget.dart';
@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   Widget _body(BuildContext context) {
     return ListView.builder(
-        itemCount: dumyData.length,
+        itemCount: dummyData.length,
         itemBuilder: (context, index) => Dismissible(
             direction: DismissDirection.endToStart,
             background: Container(color: Colors.blue),
@@ -25,10 +25,23 @@ class HomeScreen extends StatelessWidget {
                       Icons.delete_outline,
                       color: LightColor.colorFalse,
                     ))),
-            key: Key(dumyData[index].taskId),
+            key: Key(dummyData[index].taskId),
             child: Container(
               padding: EdgeInsets.only(top: 8 , bottom: 8 , left:13 , right: 13),
-              child: TaskWidget())));
+              child:_taskWidget() )));
+  }
+
+  Widget _taskWidget (){
+    void _bellButton(){}
+    void _checkBoxButton(){}
+    return TaskWidget(
+      bellButton:_bellButton ,
+      checkBoxButton:_checkBoxButton ,
+      taskName: 'moooo',
+      colorSideContainer: Colors.red,
+      isNotifications: false,
+      taskIsDone: false,
+    );
   }
 
   @override

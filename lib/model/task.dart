@@ -19,6 +19,7 @@ class Task {
       this.kindTask,
       this.color});
 
+
   Task.fromJson(Map<String, dynamic> map) {
     this.taskId = map['taskId'];
     this.taskName = map['taskName'];
